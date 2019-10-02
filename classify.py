@@ -39,7 +39,7 @@ from sklearn.svm import SVC
 
 logger = logging.getLogger(__name__)
 
-# A list of "random" colors
+# A list of "random" colors  that are nice
 COLORS = [
     "#00FF00", "#FFFF00", "#1CE6FF", "#FF34FF", "#FF4A46", "#008941", "#006FA6", "#A30059",
     "#FFDBE5", "#7A4900", "#0000A6", "#63FFAC", "#B79762", "#004D43", "#8FB0FF", "#997D87",
