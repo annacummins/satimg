@@ -39,9 +39,9 @@ from sklearn.svm import SVC
 
 logger = logging.getLogger(__name__)
 
-# A list of "random" colors
+# A list of "random" colors  that are nice
 COLORS = [
-    "#000000", "#FFFF00", "#1CE6FF", "#FF34FF", "#FF4A46", "#008941", "#006FA6", "#A30059",
+    "#00FF00", "#FFFF00", "#1CE6FF", "#FF34FF", "#FF4A46", "#008941", "#006FA6", "#A30059",
     "#FFDBE5", "#7A4900", "#0000A6", "#63FFAC", "#B79762", "#004D43", "#8FB0FF", "#997D87",
     "#5A0007", "#809693", "#FEFFE6", "#1B4400", "#4FC601", "#3B5DFF", "#4A3B53", "#FF2F80",
     "#61615A", "#BA0900", "#6B7900", "#00C2A0", "#FFAA92", "#FF90C9", "#B903AA", "#D16100",
@@ -213,7 +213,7 @@ if __name__ == "__main__":
     #
     CLASSIFIERS = {
         # http://scikit-learn.org/dev/modules/generated/sklearn.ensemble.RandomForestClassifier.html
-        'random-forest': RandomForestClassifier(n_jobs=4, n_estimators=10, class_weight='balanced'),
+        'random-forest': RandomForestClassifier(n_jobs=5, n_estimators=15, class_weight='balanced'),
         # http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
         'svm': SVC(class_weight='balanced')
     }
